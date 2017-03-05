@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>TheClaptraps的小站</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/layout.css">
+    <link rel="stylesheet" href="src/css/typography.css">
+    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="top">
+    <div class="top-audio">
+        <img id="audio-logo" src="src/img/Claptraps.jpg" alt="正在播放...">
+        <audio id="audio" controls></audio>
+        <div class="audio-button">
+            <a href="#last" id="btn-last">&#x25c1;&#x25c1;</a>
+            <a href="#play" id="btn-play" class="top-audio-btn-play">111</a>
+            <a href="#next" id="btn-next">&#x25b7;&#x25b7;</a>
+        </div>
+        <div id="audio-info"></div>
+    </div>
+    <div id="top-logo">
+        <a href="https://www.douban.com/"><img src="src/img/doubanlogo.png" alt="网站Logo"></a>
+    </div>
+    <div class="top-nav">
+        <from class="top-nav-search" action="https://www.douban.com/search" method="get">
+            <input id="top-search" type="text">
+            <input id="top-search-btn" type="submit" value="搜索">
+        </from>
+        <ul class="top-nav-link">
+            <li><a href="https://music.douban.com/mine" target="_blank">我听</a></li>
+            <li><a href="https://music.douban.com/artists/" target="_blank">音乐人</a></li>
+            <li><a href="https://artist.douban.com/abilu/2016" target="_blank">阿比鹿</a></li>
+            <li><a href="https://music.douban.com/" target="_blank">豆瓣音乐</a></li>
+            <li><a href="https://www.douban.com/accounts/login">登陆</a></li>
+        </ul>
+    </div>
+</div>
+<!-- &#x25ba; 播放unico &#x2590; 单竖线&#x2590;&#x2590;暂停-->
+<div class="header">
+    <div id="header-bg"></div>
+    <div class="container clearfix">
+        <img id="header-avatar" src="src/img/Claptraps.jpg" alt="">
+        <div class="header-container">
+            <h1>The ClapTraps 小吵闹</h1>
+            <ul class="header-nav">
+                    <li><a href="">概览</a><span class="header-nav-tips"></span></li>
+                    <li><a href="">歌曲</a><span class="header-nav-tips"></span></li>
+                    <li><a href="">相册</a><span class="header-nav-tips"></span></li>
+                    <li><a href="">活动</a><span class="header-nav-tips"></span></li>
+                    <li><a href="">留言</a><span class="header-nav-tips"></span></li>
+                </ul>
+            <div class="header-stats">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>流派</th>
+                            <th>关注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Indie</td>
+                            <td>1000+</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="content-box">
+<div class="content clearfix">
+    <div class="con-nav clearfix">
+        <a class="con-nav-btn" href="#">最热单曲</a>
+        <a class="con-nav-btn" href="#">乐队介绍</a>
+        <a class="con-nav-btn" href="#">歌曲列表</a>
+        <a class="con-nav-btn" href="#">演出信息</a>
+        <a class="con-nav-btn" href="#">留言板</a>
+    </div>
+    <div class="con-main">
+        <div class="con-box hot-song clearfix">
+            <a id="hot-song-play" href="#" class="audio-play">
+                <img src="src/img/fuTraps.jpg" alt="hot song">
+            </a>
+            <div class="hot-song-stats">
+                <h6>最受欢迎收听</h6>
+                <h3>The Future of Ms.F</h3>
+                <span>1,2345 累计播放</span>
+            </div>
+            <div class="hot-song-quote"><em>“ </em><p>喧杂的噪声，复古甜美的回响，《未来的未来》
+                是TheClaptraps于2016年创作的歌曲，几个青年夏日的畅想与对未来的憧憬，
+                伴随着吉他回援的啸叫声充满整间排练室。</p><em>”</em></div>
+        </div>
+        <div class="con-box band-intro">
+            <div class="band-info">
+                <p>“非要选一个的话，我会选声音大的那个”
+                    The Claptraps（小吵闹）是一支吉他噪音乐队，
+                    4位来自重大的乐队成员深受JAMC，Sonic Youth等乐队的影响，继承80年代噪音后朋与迷幻风格，
+                    粗粝的破音与啸叫配以复古合成器像是从扬声器射出的一颗颗糖衣炮弹，
+                    如同太空船与空间站接轨的那一瞬间，碰撞发出了巨大而静止的声响。
+                    “非要选一个的话，我会选声音大的那个”
+                    The Claptraps（小吵闹）是一支吉他噪音乐队，
+                    4位来自重大的乐队成员深受JAMC，Sonic Youth等乐队的影响，继承80年代噪音后朋与迷幻风格，
+                    粗粝的破音与啸叫配以复古合成器像是从扬声器射出的一颗颗糖衣炮弹，
+                    如同太空船与空间站接轨的那一瞬间，碰撞发出了巨大而静止的声响。</p>
+                <a href="#">...显示全部</a>
+            </div>
+            <span class="gene-tags"><a href="#">shoegaze</a><a href="#">noise</a><a href="#">alternative</a><a href="#">psychedelic</a></span>
+        </div>
+        <div class="con-box song-list clearfix">
+            <table>
+                <caption>受欢迎歌曲</caption>
+                <tbody>
+                <tr>
+                    <td class="song-list-index">1</td>
+                    <td class="song-list-btn"><a href="#" class="audio-play">play</a></td>
+                    <td class="song-list-name">song name</td>
+                    <td class="song-list-stats"><div>
+                        <span class="song-stats-value">2,025</span>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td class="song-list-index">1</td>
+                    <td class="song-list-btn"><a href="#" class="audio-play">play</a></td>
+                    <td class="song-list-name">song name</td>
+                    <td class="song-list-stats"><div>
+                        <span class="song-stats-value">4,345</span>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td class="song-list-index">1</td>
+                    <td class="song-list-btn"><a href="#" class="audio-play">play</a></td>
+                    <td class="song-list-name">song name</td>
+                    <td class="song-list-stats"><div>
+                        <span class="song-stats-value">3,345</span>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td class="song-list-index">1</td>
+                    <td class="song-list-btn"><a href="#" class="audio-play">play</a></td>
+                    <td class="song-list-name">song name</td>
+                    <td class="song-list-stats"><div>
+                        <span class="song-stats-value">1,845</span>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td class="song-list-index">1</td>
+                    <td class="song-list-btn"><a href="#" class="audio-play">play</a></td>
+                    <td class="song-list-name">song name</td>
+                    <td class="song-list-stats"><div>
+                        <span class="song-stats-value">1,054</span>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td class="song-list-index">1</td>
+                    <td class="song-list-btn"><a href="#" class="audio-play">play</a></td>
+                    <td class="song-list-name">song name</td>
+                    <td class="song-list-stats"><div>
+                        <span class="song-stats-value">2,145</span>
+                    </div></td>
+                </tr>
+                </tbody>
+            </table>
+            <span><a href="#">更多歌曲</a></span>
+        </div>
+        <div class="con-box band-gigs clearfix">
+            <div class="gig-pic">
+                <div>
+                    <a href="#"><span>演出信息</span></a>
+                </div>
+            </div>
+            <div class="gig-pic">
+                <div>
+                    <a href="#"><span>演出信息</span></a>
+                </div>
+        </div>
+            <div class="gig-pic">
+                <div>
+                    <a href="#"><span>演出信息</span></a>
+                </div>
+        </div>
+            <div class="gig-pic">
+                <div>
+                    <a href="#"><span>演出信息</span></a>
+                </div>
+        </div>
+            <div class="gig-pic">
+                <div>
+                    <a href="#"><span>演出信息</span></a>
+                </div>
+        </div>
+        </div>
+        <div class="con-box shout-box">
+            <h3>留言板</h3>
+            <div class="shout-message-box">
+                <a class="shout-user-avatar" href="#"></a>
+                        <a class="shout-user" href="#">user-name</a>
+                        <span class="shout-date">some-date</span>
+                        <p class="shout-body">MsF is my favorite fom them.</p>
+                        <a class="shout-vote" href="#">5</a>
+            </div>
+            <div class="shout-message-box">
+                <a class="shout-user-avatar" href="#"></a><a class="shout-user" href="#">user-name</a>
+                <span class="shout-date">some-date</span>
+                <p class="shout-body">It's really funny how they looked
+                    like faggots in the 80s and now they are like
+                    Scottish dads. Legendary band anyway.</p>
+                <a class="shout-vote" href="#">5</a>
+            </div>
+            <div class="shout-message-box">
+                <a class="shout-user-avatar" href="#"></a><a class="shout-user" href="#">user-name</a>
+                <span class="shout-date">some-date</span>
+                <p class="shout-body">they back baby, stop complaining</p>
+                <a class="shout-vote" href="#">5</a>
+            </div>
+            <div class="shout-message-box">
+                <a class="shout-user-avatar" href="#"></a><a class="shout-user" href="#">user-name</a>
+                <span class="shout-date">some-date</span>
+                <p class="shout-body">BBC Radio 6 played a new song called 'Amputation' today.
+                    Any opinions? In the comments on their Facebook, someone described it as 'sounding like
+                    a Munki outtake', which is pretty accurate, in my opinion, but I still
+                    dig the song. Stoked to hear more.</p>
+                <a class="shout-vote" href="#">5</a>
+            </div>
+            <div class="shout-message-box">
+                <a class="shout-user-avatar" href="#"></a><a class="shout-user" href="#">user-name</a>
+                <span class="shout-date">some-date</span>
+                <p class="shout-body">they back baby, stop complaining</p>
+                <a class="shout-vote" href="#">5</a>
+            </div>
+            <div class="shout-message-box">
+                <a class="shout-user-avatar" href="#"></a><a class="shout-user" href="#">user-name</a>
+                <span class="shout-date">some-date</span>
+                <p class="shout-body">they back baby, stop complaining</p>
+                <a class="shout-vote" href="#">5</a>
+            </div>
+            <div class="shout-message-box">
+                <a class="shout-user-avatar" href="#"></a><a class="shout-user" href="#">user-name</a>
+                <span class="shout-date">some-date</span>
+                <p class="shout-body">One swallow does not make summer. A band of their calibre can only
+                    disappoint after such a long (recording) hiatus. Let's just wait and see
+                    what the album sounds like, shall we?</p>
+                <a class="shout-vote" href="#">5</a>
+            </div>
+            <a href="#">(查看全部)</a>
+        </div>
+    </div>
+    <div class="side-bar">
+        <div class="bar-box bar-member">
+            <h3><span>Get</span><a href="https://music.douban.com/artists/">豆瓣音乐·音乐人</a></h3>
+            <hr/>
+            <table>
+                <tbody>
+                <tr>
+                    <td>Vocal: </td>
+                    <td><a href="https://www.douban.com/people/Kinollz/">关瑞·豆瓣主页</a></td>
+                </tr>
+                <tr>
+                    <td>Guitar:</td>
+                    <td><a href="#">周仰之</a></td>
+                </tr>
+                <tr>
+                    <td>Bass: </td>
+                    <td><a href="#">未来</a></td>
+                </tr>
+                <tr>
+                    <td>Drums:</td>
+                    <td><a href="https://www.douban.com/people/daniel_cheng/">豪仔·豆瓣主页</a></td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>重庆·中国</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bar-box bar-share">
+            <img src="src/img/saoma.png" alt="应用二维码">
+            <span>手机扫码访问<br/>移动版音乐人页面</span>
+        </div>
+        <div class="bar-box golden-sheep">
+            <h3><span>Get</span>薅羊毛计划</h3>
+            <p>参加金羊毛计划，作品播放即收入。</p>
+            <a href="https://music.douban.com/artists/royalty/" target="_blank">了解更多</a>
+        </div>
+        <div class="bar-box bar-fans">
+            <div><p>关注该小站的成员</p>
+                <span>(<a href="https://site.douban.com/claptraps/">1234</a>)</span>
+            </div>
+            <a href="https://www.douban.com/people/dreamsmile/" target="_blank">
+                <img src="src/img/fansshortcut/u1663023-46.jpg" height="48" width="48"/></a>
+            <a href="https://www.douban.com/people/jude880527/" target="_blank"><img src="src/img/fansshortcut/u4335381-7.jpg" height="48" width="48"/></a>
+            <a href="https://www.douban.com/people/Kinollz/" target="_blank"><img src="src/img/fansshortcut/u33561152-53.jpg" height="48" width="48"/></a>
+            <a href="https://www.douban.com/people/42132535/" target="_blank"><img src="src/img/fansshortcut/u42132535-5.jpg" height="48" width="48"/></a>
+            <a href="https://www.douban.com/people/53459236/" target="_blank"><img src="src/img/fansshortcut/u53459236-27.jpg" height="48" width="48"/></a>
+            <a href="https://www.douban.com/people/daniel_cheng/" target="_blank"><img src="src/img/fansshortcut/u64420098-7.jpg" height="48" width="48"/></a>
+            <a href="https://www.douban.com/people/73349974/" target="_blank"><img src="src/img/fansshortcut/u73349974-3.jpg" height="48" width="48"/></a>
+            <a href="https://www.douban.com/people/145721737/" target="_blank"><img src="src/img/fansshortcut/u145721737-2.jpg" height="48" width="48"/></a>
+        </div>
+        <div class="bar-app clearfix">
+            <a href="https://artist.douban.com/app">
+                <span> </span>
+                <span class="bar-app-title">豆瓣音乐人客户端</span>
+                <span>发现当下最酷的独立音乐</span>
+            </a>
+        </div>
+        <div class="bar-box bar-album">
+            <div><span>专辑</span><a href="">(全部)</a></div>
+            <div class="album-box"><a href=""><span></span><h6>Album Name</h6><p>2016-01-02</p></a></div>
+            <div class="album-box"><a href=""><span></span><h6>Album Name</h6><p>2015-11-07</p></a></div>
+            <div class="album-box"><a href=""><span></span><h6>Album Name</h6><p>2013-07-24</p></a></div>
+            <div class="album-box"><a href=""><span></span><h6>Album Name</h6><p>2009-08-16</p></a></div>
+        </div>
+        <div class="bar-box bar-adv">
+            <p>some advertisement</p>
+            <p>some advertisement</p>
+            <p>some advertisement</p>
+            <p>some advertisement</p>
+            <p>some advertisement</p>
+            <p>some advertisement</p>
+            <p>some advertisement</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="similar-arts">
+        <a href="#" class="similar-arts-btn" id="arts-left-btn">&#x21e6;</a>
+        <a href="#" class="similar-arts-btn" id="arts-right-btn">&#x21e8;</a>
+        <div class="similar-arts-gallery">
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">Scott Pillgrim VS The World</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/图片2.jpg" height="396" width="720"/></a>
+            </div>
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">The Libertines</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/bandcover/5.jpg" height="396" width="720"/></a>
+            </div>
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">Carsick Cars</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/bandcover/Carsick-Cars-by-Charles-Saliba-1.jpg" height="396" width="720"/></a>
+            </div>
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">The Jesus and Mery Chain</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/bandcover/JAMC.jpg" height="396" width="720"/></a>
+            </div>
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">Joyside</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/bandcover/p1379622125.jpg" height="396" width="720"/></a>
+            </div>
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">Bird Striking</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/bandcover/p2323209995.jpg" height="396" width="720"/></a>
+            </div>
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">White+</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/bandcover/p2382973640.jpg" height="396" width="720"/></a>
+            </div>
+            <div class="gall-box">
+                <a href="#">
+                    <span class="similar-arts-name">谷水车间</span>
+                    <img class="gallery-pic-cover" src="src/img/bgImgCoverLinear.png">
+                    <img class="gallery-pic" src="src/img/bandcover/timg.jpg" height="396" width="720"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="foo-nav">
+        <span>©Date 版权声明 Rights</span>
+        <ul class="clearfix">
+            <li><a href="https://www.douban.com/about">关于豆瓣</a></li>
+            <li><a href="https://www.douban.com/jobs">在豆瓣工作</a></li>
+            <li><a href="https://www.douban.com/about?topic=contactus">联系我们</a></li>
+            <li><a href="https://www.douban.com/about?policy=disclaimer">免责声明</a></li>
+            <li><a href="https://www.douban.com/help/">帮助中心</a></li>
+            <li><a href="https://www.douban.com/doubanapp/">移动应用</a></li>
+            <li><a href="https://www.douban.com/partner/">豆瓣广告</a></li>
+        </ul>
+    </div>
+</div>
+<script src="src/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="src/js/main.js" type="text/javascript"></script>
+</body>
+</html>
