@@ -657,6 +657,7 @@ background-image: url("../img/shoutbox/user7.png");
     left: 20px;
 }
 .foo-nav {
+    min-width: 960px;
     height: 30px;
     background-color: black;
 }
